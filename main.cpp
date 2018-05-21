@@ -6,11 +6,13 @@
 #include <conio.h>
 #include <cstdio>
 #include <stack>
+#include "lexer.h"
 
 using namespace std;
 int main()
 {
 	setlocale(0, "");
+
 
 	char a[10000] = { 0 };
 	char out[10000] = { 0 };
@@ -18,11 +20,17 @@ int main()
 	int i = 0;
 
 
-	cout << "Введите выражение: ";
+	cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: ";
 			gets_s(a);
 	opn(a, out);
-	cout << "Выражение в ОПЗ: " << out << endl;
-	cout << "Ответ: " << Calc(out) << "\n\n";
+	cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ: " << out << endl;
+	cout << "пїЅпїЅпїЅпїЅпїЅ: " << Calc(out) << "\n\n";
+int main()
+{
+	string expression;
+	cout << "Enter expression? ";
+	getline(cin, expression);
+	cout << "Your expression is: " << expression << endl;
 
 
 	_getch();
