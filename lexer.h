@@ -1,24 +1,21 @@
-#ifndef lexer_h
-#define lexer_h
+#ifndef OPN_h
+#define OPN_h
+
 
 #include <iostream>
-#include <string>
+#include <cctype>
+#include <stdlib.h>
+#include <conio.h>
+#include <cstdio>
+#include <stack>
 
 using namespace std;
 
-int charToNumber(char);
-bool isInNumbers(char);
-int parseLexem(char);
-
-class Lexer {
-protected:
-	string expression;
-public:
-	Lexer(string);
-	bool isNumber(int);
-	bool isSimpleNumber(int);
-	int calculateTemp(int, int, int);
-	int eval();
-};
+int drob(int);
+int prior(char);
+bool is_op(char);
+bool is_digit(char);
+void opn(char *, char *);
+float Calc(char *);
 
 #endif
