@@ -1,5 +1,5 @@
-#ifndef OPN_h
-#define OPN_h
+#ifndef lexer_h
+#define lexer_h
 
 
 #include <iostream>
