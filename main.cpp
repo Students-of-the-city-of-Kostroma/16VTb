@@ -1,4 +1,4 @@
-#include "OPN.h"
+#include "lexer.h"
 
 #include <iostream>
 #include <cctype>
@@ -18,11 +18,11 @@ int main()
 	int i = 0;
 
 
-	cout << "Ââåäèòå âûðàæåíèå: ";
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¢Ã»Ã°Ã Ã¦Ã¥Ã­Ã¨Ã¥: ";
 			gets_s(a);
 	opn(a, out);
-	cout << "Âûðàæåíèå â ÎÏÇ: " << out << endl;
-	cout << "Îòâåò: " << Calc(out) << "\n\n";
+	cout << "Ã‚Ã»Ã°Ã Ã¦Ã¥Ã­Ã¨Ã¥ Ã¢ ÃŽÃÃ‡: " << out << endl;
+	cout << "ÃŽÃ²Ã¢Ã¥Ã²: " << Calc(out) << "\n\n";
 
 
 	_getch();
