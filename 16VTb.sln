@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lexer", "lexer\lexer.vcxproj", "{724C2107-3B09-4D9C-A764-30015B139DA7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lexerlib", "lexerlib\lexerlib.vcxproj", "{ABD83D6F-7089-4561-BE76-DCB05632B1A1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lexerUT", "lexerUT\lexerUT.vcxproj", "{68C5534E-B758-4DEA-BCE2-B2647C59503E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{93DB7E38-49B1-4B5C-B338-A7B2FAC501C8}"
+	ProjectSection(SolutionItems) = preProject
+		16VTb.vsmdi = 16VTb.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = 16VTb.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{724C2107-3B09-4D9C-A764-30015B139DA7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{724C2107-3B09-4D9C-A764-30015B139DA7}.Debug|Win32.Build.0 = Debug|Win32
+		{724C2107-3B09-4D9C-A764-30015B139DA7}.Release|Win32.ActiveCfg = Release|Win32
+		{724C2107-3B09-4D9C-A764-30015B139DA7}.Release|Win32.Build.0 = Release|Win32
+		{ABD83D6F-7089-4561-BE76-DCB05632B1A1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{ABD83D6F-7089-4561-BE76-DCB05632B1A1}.Debug|Win32.Build.0 = Debug|Win32
+		{ABD83D6F-7089-4561-BE76-DCB05632B1A1}.Release|Win32.ActiveCfg = Release|Win32
+		{ABD83D6F-7089-4561-BE76-DCB05632B1A1}.Release|Win32.Build.0 = Release|Win32
+		{68C5534E-B758-4DEA-BCE2-B2647C59503E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{68C5534E-B758-4DEA-BCE2-B2647C59503E}.Debug|Win32.Build.0 = Debug|Win32
+		{68C5534E-B758-4DEA-BCE2-B2647C59503E}.Release|Win32.ActiveCfg = Release|Win32
+		{68C5534E-B758-4DEA-BCE2-B2647C59503E}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
