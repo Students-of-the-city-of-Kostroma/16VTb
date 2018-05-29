@@ -1,11 +1,12 @@
 #include "lexer.h"
 
-#include <iostream>
-#include <cctype>
-#include <stdlib.h>
-#include <conio.h>
-#include <cstdio>
-#include <stack>
+
+#include <iostream> 
+#include <cctype> 
+#include <stdlib.h> 
+#include <conio.h> 
+#include <cstdio> 
+#include <stack> 
 
 using namespace std;
 int main()
@@ -18,11 +19,10 @@ int main()
 	int i = 0;
 
 
-	cout << "Ââåäèòå âûðàæåíèå: ";
-			gets_s(a);
+	cout << "Ã‚Ã¢Ã¥Ã¤Ã¨Ã²Ã¥ Ã¢Ã»Ã°Ã Ã¦Ã¥Ã­Ã¨Ã¥: ";
 	opn(a, out);
-	cout << "Âûðàæåíèå â ÎÏÇ: " << out << endl;
-	cout << "Îòâåò: " << Calc(out) << "\n\n";
+	cout << "Ã‚Ã»Ã°Ã Ã¦Ã¥Ã­Ã¨Ã¥ Ã¢ ÃŽÃÃ‡: " << out << endl;
+	cout << "ÃŽÃ²Ã¢Ã¥Ã²: " << Calc(out) << "\n\n";
 
 
 	_getch();

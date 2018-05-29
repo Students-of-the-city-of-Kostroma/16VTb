@@ -39,6 +39,11 @@ void opn(char *a, char *out)
 
 	for (; a[i] != '\0'; ++i)
 	{
+		if ((is_op(a[i]) && is_op(a[i+1])) || (!is_op(a[i]) && !is_digit(a[i])))
+		{
+			cout << "Error!";
+			_getch(); exit(1);
+		}
 		if (is_digit(a[i]))
 		{
 			out[j] = a[i];
@@ -116,6 +121,7 @@ void opn(char *a, char *out)
 }
 float Calc(char *out)
 {
+	int abc = 0;
 	int j = 0, c = 0; float r1 = 0, r2 = 0;
 
 	stack <float> S;
@@ -139,18 +145,37 @@ float Calc(char *out)
 			{
 				r1 = S.top(); S.pop();
 				r2 = S.top(); S.pop();
-				switch (out[j])
+
+
+				if (abc < 50)
 				{
-				case ',': S.push(r2 + (r1 * pow(0.1, drob(r1)))); break;
-				case 'e': S.push(r2*pow(10, r1)); break;
-				case '+': S.push(r2 + r1); break;
-				case '-': S.push(r2 - r1); break;
-				case '*': S.push(r2*r1); break;
-				case '/': S.push(r2 / r1); break;
+					abc++;
+					if (abc >= 50)
+					{
+						cout << "Error!";
+						_getch(); exit(1);
+					}
+					switch (out[j])
+					{
+					case ',': S.push(r2 + (r1 * pow(0.1, drob(r1)))); break;
+					case 'e': S.push(r2*pow(10, r1)); break;
+					case '+': S.push(r2 + r1); break;
+					case '-': S.push(r2 - r1); break;
+					case '*': S.push(r2*r1); break;
+					case '/': S.push(r2 / r1); break;
+					}
 				}
 			}
 			++j;
 		}
 	}
-	return (S.top());
+	if ((S.top() > 2000000000) || (S.top() < -2000000000))
+	{
+		cout << "Error!";
+		_getch(); exit(1);
+	}
+
+	else
+
+		return (S.top());
 }
