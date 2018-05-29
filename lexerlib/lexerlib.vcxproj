@@ -21,9 +21,13 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <PlatformToolset>v100</PlatformToolset>
 =======
 >>>>>>> parent of 9e7f954... initproject
+=======
+    <PlatformToolset>v141</PlatformToolset>
+>>>>>>> parent of a33a072... project init
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>

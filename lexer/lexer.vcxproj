@@ -21,9 +21,13 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <PlatformToolset>v100</PlatformToolset>
 =======
 >>>>>>> parent of 9e7f954... initproject
+=======
+    <PlatformToolset>v141</PlatformToolset>
+>>>>>>> parent of a33a072... project init
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -55,9 +59,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <AdditionalIncludeDirectories>D:\gitalaba\gfd\lexerlib;D:\repos\repoa\lexerlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
 =======
 >>>>>>> parent of 9e7f954... initproject
+=======
+      <AdditionalIncludeDirectories>D:\repos\repoa\lexerlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+>>>>>>> parent of a33a072... project init
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -83,6 +91,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <ProjectReference Include="..\lexerlib\lexerlib.vcxproj">
       <Project>{abd83d6f-7089-4561-be76-dcb05632b1a1}</Project>
     </ProjectReference>
@@ -90,12 +99,14 @@
 >>>>>>> parent of 9e7f954... initproject
   </ItemGroup>
   <ItemGroup>
+=======
+>>>>>>> parent of a33a072... project init
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="stdafx.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
+    <ProjectReference Include="..\lexerlib\lexerlib.vcxproj">
+      <Project>{abd83d6f-7089-4561-be76-dcb05632b1a1}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
