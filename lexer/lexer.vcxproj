@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -14,21 +14,22 @@
     <ProjectGuid>{724C2107-3B09-4D9C-A764-30015B139DA7}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>lexer</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
+<<<<<<< HEAD
     <PlatformToolset>v100</PlatformToolset>
+=======
+>>>>>>> parent of 9e7f954... initproject
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
@@ -53,7 +54,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+<<<<<<< HEAD
       <AdditionalIncludeDirectories>D:\gitalaba\gfd\lexerlib;D:\repos\repoa\lexerlib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+=======
+>>>>>>> parent of 9e7f954... initproject
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -78,9 +82,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <ProjectReference Include="..\lexerlib\lexerlib.vcxproj">
       <Project>{abd83d6f-7089-4561-be76-dcb05632b1a1}</Project>
     </ProjectReference>
+=======
+>>>>>>> parent of 9e7f954... initproject
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
