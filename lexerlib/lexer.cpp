@@ -102,7 +102,6 @@ void opn(char *a, char *out)
 					}
 				}
 			}
-
 		}
 	}
 	while (!S.empty())
@@ -166,7 +165,6 @@ float Calc(char *out)
 					case '/': S.push(r2 / r1); break;
 					}
 				}
-				
 			}
 			++j;
 		}
